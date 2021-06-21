@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <deepLink app:uri="app://HOME_SCREEN" />
+        <action
+            android:id="@+id/action_homeFragment_to_extractFragment"
+            app:destination="@id/extractFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/extractFragment"
+        android:name="com.example.extract.ExtractFragment"
+        tools:layout="@layout/fragment_extract">
+        <deepLink app:uri="app://EXTRACT_SCREEN" />
+        <action
+            android:id="@+id/action_extractFragment_to_cardFragment"
+            app:destination="@id/cardFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="com.example.card.CardFragment"
+        tools:layout="@layout/fragment_card">
+        <deepLink app:uri="app://CARD_SCREEN" />
+    </fragment>
+</navigation>
