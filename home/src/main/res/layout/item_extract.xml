@@ -1,65 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <View
-        android:id="@+id/view_extract_widget"
-        android:layout_width="357dp"
-        android:layout_height="169dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginEnd="21dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_extract_widget"
+    android:layout_width="374dp"
+    android:layout_height="220dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="120dp"
+    android:layout_marginEnd="16dp"
+    android:elevation="4dp"
+    android:background="@drawable/white_stroke_grey"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
 
     <TextView
         android:id="@+id/extract_title_widget"
+        style="@style/Design.Title.H4"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginTop="28dp"
-        android:text="Meu saldo"
-        android:textSize="20sp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:textColor="@color/black"
+        android:text="@string/my_balance"
         app:layout_constraintEnd_toEndOf="@+id/view_extract_widget"
-        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view_extract_widget" />
 
     <TextView
         android:id="@+id/title_balance_widget"
+        style="@style/Design.Title.H4"
         android:layout_width="wrap_content"
         android:layout_height="27dp"
-        android:text="Saldo disponivel"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_extract"
+        android:text="@string/balance_available"
+        app:layout_constraintBottom_toTopOf="@+id/balance_button"
         app:layout_constraintEnd_toEndOf="@+id/view_extract_widget"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="@+id/view_extract_widget"
         app:layout_constraintTop_toBottomOf="@+id/extract_title_widget"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/button_extract"
-        android:layout_width="178dp"
-        android:layout_height="42dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/red"
-        android:text="@string/extract_button"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view_extract_widget"
-        app:layout_constraintEnd_toEndOf="@+id/view_extract_widget"
-        app:layout_constraintStart_toStartOf="@+id/view_extract_widget"
-        app:layout_constraintTop_toTopOf="@+id/view_extract_widget"
-        app:layout_constraintVertical_bias="0.904" />
 
+    <TextView
+        android:id="@+id/title_balance_value"
+        style="@style/Design.Title.H4"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        tools:text="R$ 50.000.00"
+        app:layout_constraintBottom_toTopOf="@+id/view_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toEndOf="@+id/title_balance_widget"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="84dp"
+        android:background="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_balance_widget" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/balance_button"
+        style="@style/Widget.Button.White"
+        android:layout_width="373dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="@string/see_extract"
+        android:textAppearance="@style/Design.Title.H4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_divider" />
 </androidx.constraintlayout.widget.ConstraintLayout>

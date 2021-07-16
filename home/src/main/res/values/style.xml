@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Design.Title" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Design.Title.H4" >
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Widget.Button" parent="Widget.MaterialComponents.Button" />
+
+    <style name="Widget.Button.White" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:height">50dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Regular</item>
+        <item name="android:textColor">@color/select_button_color</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.Regular" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

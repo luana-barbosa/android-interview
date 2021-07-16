@@ -39,7 +39,7 @@ android {
 
 dependencies {
 
-    implementation project(':extract')
+    implementation project(':statement')
     implementation project(':card')
     implementation project(':home')
 

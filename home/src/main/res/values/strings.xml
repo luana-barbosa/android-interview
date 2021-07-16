@@ -7,8 +7,13 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_home_fragment">Olá, Diego</string>
+    <string name="hello_home_fragment">Olá, Diego!</string>
     <string name="hello_card_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="details_button">Ver detalhes</string>
     <string name="extract_button">Ver extrato</string>
+    <string name="my_balance">Meu saldo</string>
+    <string name="balance_available">Saldo disponivel</string>
+    <string name="see_extract">Ver Extrato</string>
+    <string name="my_card">Meu cartão</string>
+    <string name="see_details">Ver Detalhes</string>
 </resources>

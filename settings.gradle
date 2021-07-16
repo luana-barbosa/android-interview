@@ -2,4 +2,4 @@ rootProject.name = "AndroidInterview"
 include ':app'
 include ':home'
 include ':card'
-include ':extract'
+include ':statement'
