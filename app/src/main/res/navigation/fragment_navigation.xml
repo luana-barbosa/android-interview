@@ -11,9 +11,6 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <deepLink app:uri="app://HOME_SCREEN" />
-        <action
-            android:id="@+id/action_homeFragment_to_extractFragment"
-            app:destination="@id/extractFragment" />
     </fragment>
 
     <fragment
@@ -21,9 +18,6 @@
         android:name="com.example.extract.ExtractFragment"
         tools:layout="@layout/fragment_extract">
         <deepLink app:uri="app://EXTRACT_SCREEN" />
-        <action
-            android:id="@+id/action_extractFragment_to_cardFragment"
-            app:destination="@id/cardFragment"/>
     </fragment>
 
     <fragment
